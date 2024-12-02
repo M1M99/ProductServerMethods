@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        nav a {
+            font-size: 20px;
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+        ul li{
+            border: 2px red solid;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        ul li p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        #first {
+            padding-left: 5px;
+        }
+
+        #dltbtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            color: rgb(43, 128, 120);
+            width: 50%;
+            text-align: center;
+            height: 30px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+        }
+        #pay{
+            justify-content: center;
+            color: rgb(43, 128, 120);
+            width: 40%;
+            height: 30px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+        }
+        input{
+            font-size: larger;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div
+        style="width: 100%; background-color:rgb(59, 59, 135);height: fit-content;border-radius: 3px;display: flex;height: 60px;">
+        <nav>
+            <a href="navigatorCart.html" class="allLink" id="first">
+                <h1 style="letter-spacing: 1px; font-size: 35px;">Your Cart</h1>
+            </a>
+            <div style="margin-left: auto; display: flex;gap: 40px;">
+                <a href="navigatorShop.html"  class="allLink">
+                    <h1>Shop</h1>
+                </a>
+                <a href="navigatorOrder.html" style="padding-right: 5px;" class="allLink">
+                    <h1>Orders</h1>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <ul id="list"></ul>
+    <form id="formCart" style="display: none; text-align: center;">
+        <input type="text" id="nameClient" placeholder="Your Name" name="nameClient"><br>
+        <input type="text" id="number" placeholder="Phone Number" name="number"><br>
+        <input type="text" id="TotalPrice" placeholder="Confirm Price" name="TotalPrice"><br>
+        <button type="submit" style="width: 30%;font-size: larger;margin-bottom: 10px;">Confirm</button>
+    </form>
+    <button id="pay" style="display: none;">Confirm Cart</button>
+    <script src="navigatorCart.js"></script>
+</body>
+
+</html>
