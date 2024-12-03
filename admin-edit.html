@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Edit</title>
+    <style>
+        form input{
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="navigatorShop.html">MY SHOP</a></h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">ADMIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="addForm">
+            <input type="text" name="product_name" placeholder="Product Name" />
+            <input type="text" name="product_description" placeholder="Product Description" />
+            <input type="text" name="product_price" placeholder="Product Price" />
+            <button style="height: 35px;">ADD</button>
+        </form>
+        <ul id="listProducts">
+
+        </ul>
+   </main>
+   <script src="adminedit.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ return result}
 async function printProd(arr = []) {
     let getList = document.getElementById('list')
     getList.innerHTML = '';
-
+// sadece ad soyadi price i yazdim ordere sinifdekinden ferqli olsun deye
     for (const element of arr) {
         let myList = document.createElement('li')
         myList.innerHTML = `
